@@ -1,0 +1,62 @@
+body {
+    min-height: 60px;
+    width: 300px;
+}
+
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}
+
+@media print {
+    .hide {
+        visibility: hidden
+    }
+}
+
+@font-face {
+    font-family: Arial;
+    panose-1: 2 11 6 4 3 5 4 4 2 4;
+    mso-font-charset: 204;
+    mso-generic-font-family: swiss;
+    mso-font-pitch: variable;
+    mso-font-signature: -520077569 -1073717157 41 0 66047 0;
+}
+
+.print-talon {
+    width: 100%;
+    text-align: center;
+    font-size: 1.45em;
+}
+
+.print-talon .print-talon__speciality,
+.print-talon .print-talon__doctor,
+.print-talon .print-talon__cabinet,
+.print-talon .print-talon__date {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.print-talon .print-talon__cabinet {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.print-talon .print-talon__doctor {
+    text-align: center;
+}
+
+.print-talon > .print-talon__queue {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.print-talon > .print-talon__code {
+    text-align: center;
+    font-size: 4.75em;
+}
+
+.print-talon > .print-talon__time {
+    margin-top: 20px;
+}
